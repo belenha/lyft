@@ -1,3 +1,309 @@
 /*
  * Estilos de tu proyecto
  */
+ *{
+    box-sizing: border-box;
+	font-family: "Montserrat";
+	margin: 0;
+}
+
+body {
+	position: relative;
+}
+
+input:focus {
+	outline: none;
+}
+
+/* NAV */
+nav {
+	padding: 1% 0%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+.logo {
+  width: 25%;
+}
+
+.text-white {
+	color: white;
+}
+
+.text-purple {
+	color: #352384;
+}
+
+.text-pink {
+	color: #FF00BF;
+}
+
+.hover-pink:hover {
+	color: #FF00BF;
+}
+
+.hover-opacity:hover {
+	background-color: rgba(255,255,255,0.25);
+}
+
+ul li {
+	display: inline-block;
+	font-size: 1.1em;
+	list-style: none;
+	text-align: left;
+	vertical-align: middle;
+	width:6%;
+}
+
+ul li:first-child img {
+	width: 10%;
+	margin-left: 5%;
+}
+
+ul li:first-child {
+	text-align: left;
+	width: 60%;
+}
+
+ul li:nth-child(5), ul li:nth-child(6) {
+	width:10%;
+}
+
+.button {
+	border-radius: 0.5rem;
+	font-size: 1em;
+	padding: 0.6rem 1.2rem;
+	background-color: transparent;
+	border: 1px solid white;
+}
+
+.btn-pink {
+	border: 1px solid #FF00BF;
+}
+
+/* HERO 1 */
+.hero {
+	position: relative;
+	top: -16vh;
+}
+
+.hero img {
+	width: 100%;
+}
+
+.hero div:nth-child(2) {
+	background-color: white;
+	position: absolute;
+	right: 0;
+	top: 33vh;
+	width: 40%;
+	z-index: 500;
+}
+
+.hero div:nth-child(2) form {
+	padding:  14% 14% 7% 14%;
+}
+
+.hero div:nth-child(2) form h1 {
+	font-size: 2.5rem;
+	line-height: 1;
+	font-weight: 600;
+}
+
+.hero div:nth-child(2) form h3 {
+	margin-top: 3%;
+	font-size: 0.875rem;
+}
+
+.hero div:nth-child(2) form input {
+	border: 1px solid #352384;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	width: 100%;
+	font-size: 0.9em;
+	padding: 8% 0 3% 0;
+}
+
+.hero div:nth-child(2) form p {
+	font-size: 0.7em;
+	color: #728099;
+	margin-bottom: 0.7rem;
+}
+
+.hero div:nth-child(2) form button {
+	border: 0.08333rem solid transparent;
+	padding: 0.75rem 1.25rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0.5rem;
+	margin: 2rem 0;
+}
+
+.hero div:nth-child(2) form button:nth-child(4) {
+	background-color:#FF00BF;
+}
+
+.hero div:nth-child(2) form button:nth-child(5) {
+	background-color:transparent;
+	color: #728099;
+	text-decoration: underline;
+}
+
+.div-gradient {
+	z-index: 499;
+	width: 100%;
+	position: absolute;
+	bottom: 15vh;
+	height: 15vh;
+	background: linear-gradient(transparent, #76278f)
+}
+
+/* HERO 2 - APP */
+.app {
+	position: relative;
+	top: -33vh;
+	padding-bottom: 30vh;
+	background: linear-gradient(#76278f, #2B1E66);
+}
+
+.app div {
+	padding: 4% 8% 8% 8%;
+	height: 75vh;
+	line-height: 1.5;
+	width: 75%;
+}
+
+.app div div h3 {
+	font-size: 1.75em;
+	margin-bottom: 1%;;
+}
+
+.app div div p {
+	margin-bottom: 10%;
+}
+
+.app img {
+	position: absolute;
+	right: 5%;
+	width: 35%;
+	top: 12%;
+}
+
+/* VIDEO  */
+.video {
+	position: absolute;
+	height: 100vh;
+}
+
+.position-relative {
+	position: relative;
+}
+
+.video-amplify-your-ride {
+	top: -33vh;
+}
+
+.video-june {
+	top: -33.8vh;
+}
+
+.video-a-good-thing-going {
+	top: -34.5vh;
+}
+
+.video div {
+	padding: 1.8rem 3.5rem;
+	display: inline-block;
+	width: 33%;
+	vertical-align: top;
+}
+
+.title-video {
+	font-size: 1.75rem;
+	margin-bottom: 1.5rem;
+}
+
+.watch {
+	margin-bottom: 0.5rem;
+	font-size: 0.875rem;
+	font-weight: bold;
+}
+
+.info {
+	font-size: 1rem;
+	line-height: 1.48;
+}
+
+iframe {
+	width: 66.5%;
+	height: 80vh;
+}
+
+/* FOOTER */
+footer {
+	top: 207vh;
+	padding: 5% 10%;
+	background-color: #333447;
+	width: 100%;
+	height: 85vh;
+  
+}
+
+footer div {
+	display: inline-block;
+	width: 24%;
+}
+
+footer div:nth-child(4) img {
+	width: 50%;
+}
+
+footer h3, footer p {
+	line-height: 3;
+}
+
+footer img {
+	margin-bottom: 2rem;
+}
+
+footer img:nth-child(3) {
+	margin-bottom: 0;
+}
+
+footer p {
+  text-align: center;  
+}
+
+footer p:hover {
+	color: #b30086;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+footer h3:hover {
+	text-decoration-color: #b30086;
+	text-decoration: underline;
+}
+
+.iconos {
+	text-align: center;
+	width: 100%;
+	margin-top: 2rem;
+	padding-top: 3rem;
+}
+
+.iconos hr {
+	width: 70%;
+	margin: 2rem auto;
+}
+
+.iconos i {
+	padding: 0.5rem;
+	border: 1px solid white;
+	border-radius: 50%;
+	margin: 0 2rem;
+	background-color: transparent;
+}
